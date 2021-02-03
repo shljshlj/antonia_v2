@@ -1,0 +1,9 @@
+.work-list {
+  li:not(:last-child) {
+    margin-bottom: 1em;
+  }
+
+  h4 {
+    font-weight: bold;
+  }
+}
