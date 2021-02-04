@@ -1,0 +1,78 @@
+.section {
+  padding: 100px 0;
+
+  &__title {
+    margin-bottom: 1em;
+    font-size: 2em;
+  }
+
+  &:nth-child(1) {
+    align-self: flex-start;
+  }
+
+  &:nth-child(2) {
+    align-self: flex-end;
+  }
+}
+
+.work-list {
+  .job:not(:last-child) {
+    margin-bottom: 2em;
+  }
+
+  h4 {
+    font-weight: 400;
+    font-size: 1.5em;
+  }
+
+  .info {
+    font-size: 0.9em;
+    font-style: italic;
+    display: flex;
+    // justify-content: space-between;
+    margin-bottom: 0.7em;
+  }
+
+  .location {
+    margin-left: 2em;
+    position: relative;
+
+    &::before {
+      content: '|';
+      position: absolute;
+      transform: translateX(-50%);
+      left: -1em;
+    }
+  }
+
+  .job-link {
+    a {
+      position: relative;
+    }
+
+    a::after {
+      content: '\21D7';
+      padding-left: 0.1em;
+      font-size: 0.7em;
+      position: absolute;
+      top: -0.1em;
+    }
+  }
+}
+
+.skills {
+  &__list {
+    width: 40ch;
+    position: relative;
+
+    li:not(:last-child) {
+      margin-bottom: 0.5em;
+    }
+
+    li::before {
+      content: '*';
+      position: absolute;
+      left: -1em;
+    }
+  }
+}
