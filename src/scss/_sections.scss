@@ -1,5 +1,5 @@
 .section {
-  padding: 100px 0;
+  padding: 4rem 0;
 
   &__title {
     margin-bottom: 1em;
@@ -74,5 +74,23 @@
       position: absolute;
       left: -1em;
     }
+  }
+}
+
+.contact__info {
+  margin-bottom: 3em;
+}
+
+.img {
+  width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  @media (min-width: 480px) {
+    width: 300px;
   }
 }
