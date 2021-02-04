@@ -9,7 +9,7 @@ module.exports = merge(common, {
   devtool: false,
   output: {
     path: paths.build,
-    publicPath: '/antonia-website/',
+    publicPath: '/antonia_v2/',
     filename: '[name].[contenthash].bundle.js',
   },
   module: {
