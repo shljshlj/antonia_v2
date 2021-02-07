@@ -4,6 +4,7 @@
   &__title {
     margin-bottom: 1em;
     font-size: 2em;
+    color: #03a9f4;
   }
 
   &:nth-child(1) {
@@ -45,19 +46,19 @@
     }
   }
 
-  .job-link {
-    a {
-      position: relative;
-    }
+  // .job-link {
+  //   a {
+  //     position: relative;
+  //   }
 
-    a::after {
-      content: '\21D7';
-      padding-left: 0.1em;
-      font-size: 0.7em;
-      position: absolute;
-      top: -0.1em;
-    }
-  }
+  //   a::after {
+  //     content: '\21D7';
+  //     padding-left: 0.1em;
+  //     font-size: 0.7em;
+  //     position: absolute;
+  //     top: -0.1em;
+  //   }
+  // }
 }
 
 .skills {

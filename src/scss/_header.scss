@@ -1,25 +1,86 @@
 header {
+  max-width: 1200px;
   width: 100%;
   min-height: 100vh;
+  margin: auto;
   padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 8vmin;
-  padding: 1em;
 
   .page-title {
     font-weight: 700;
     font-size: 2em;
-    // text-align: center;
-    line-height: 1.3em;
-    letter-spacing: -0.15em;
-    // padding-top: 0.5em;
+    line-height: 1em;
+    letter-spacing: -0.1em;
+    padding-bottom: 0.75em;
+
+    .second-row {
+      padding-left: 0.2em;
+    }
+    .third-row {
+      padding-left: 0.1em;
+    }
+
+    .row {
+      $color1: red;
+      $color2: orange;
+      $color3: pink;
+      $color4: #ffeb3b;
+      $color5: #2196f3;
+
+      $color1a: #c45882;
+      $color2a: #c65b65;
+      $color3a: #c9745e;
+      $color4a: #cb9761;
+      $color5a: #cdb963;
+
+      span:nth-child(5n - 4) {
+        background: linear-gradient(to bottom, $color1a, $color1);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      span:nth-child(5n - 3) {
+        background: linear-gradient(to bottom, $color2a, $color2);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      span:nth-child(5n - 2) {
+        background: linear-gradient(to bottom, $color3a, $color3);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      span:nth-child(5n - 1) {
+        background: linear-gradient(to bottom, $color4a, $color4);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      span:nth-child(5n) {
+        background: linear-gradient(to bottom, $color5a, $color5);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      span {
+        padding-right: 0.1em;
+        margin-left: -0.1em;
+      }
+    }
   }
 
   .description {
-    max-width: 70ch;
-    font-size: clamp(18px, 3vmin, 40px);
+    max-width: 55ch;
+    font-size: clamp(18px, 3vmin, 32px);
     // margin-right: -2em;
     align-self: flex-end;
   }
