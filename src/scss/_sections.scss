@@ -63,7 +63,7 @@
 
 .skills {
   &__list {
-    width: 40ch;
+    max-width: 40ch;
     position: relative;
 
     li:not(:last-child) {
