@@ -51,6 +51,11 @@
   ////
 
   --background-gray: #2a2a2a;
+  --bg-color-beige: #fff8ed;
+  --color-dark-gray: #2c2c2c;
+
+  --page-bg: var(--bg-color-beige);
+  --page-font-color: var(--color-dark-gray);
 }
 html {
   box-sizing: border-box;
@@ -78,13 +83,10 @@ a {
 }
 
 body {
-  background-color: var(--background-gray);
-  color: #eee;
+  background-color: var(--page-bg);
+  background-image: url('../assets/images/paper.png');
+  color: var(--page-font-color);
   min-height: 100vh;
-}
-
-p {
-  line-height: 1.5;
 }
 
 footer {
@@ -94,7 +96,16 @@ footer {
 }
 
 a {
-  color: #ffc107;
+  color: #b40000;
+  border-bottom: 1px solid #b40000;
+
+  &:hover {
+    background-image: url('../assets/line-wavy.svg');
+    background-position: 0 100%;
+    background-size: auto 3px;
+    background-repeat: repeat-x;
+    border-bottom: none;
+  }
 }
 
 // .container {
