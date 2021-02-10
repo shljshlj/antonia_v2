@@ -1,5 +1,9 @@
 .section {
-  padding: 4rem 0;
+  &-container {
+    // padding: 4rem 0;
+    padding-top: 4rem;
+    padding-bottom: calc(4rem + 3.5%);
+  }
 
   &__title {
     margin-bottom: 1em;
@@ -17,12 +21,21 @@
 }
 
 .about {
-  background-color: #e1f5fe;
   @media (min-width: 768px) {
     &__inner {
       display: grid;
       grid-template-columns: 3fr 2fr;
       grid-gap: 50px;
+    }
+  }
+
+  .section-container {
+    background-color: #e1f5fe;
+  }
+
+  &__text {
+    p {
+      margin: calc(1em * 1.4) 0;
     }
   }
 
@@ -53,14 +66,18 @@
 }
 
 .work {
-  background-color: #f3e5f5;
+  margin-top: -3.5%;
+
+  .section-container {
+    background-color: #f3e5f5;
+  }
 
   &__list {
     .job:not(:last-child) {
       margin-bottom: 2em;
     }
 
-    h4 {
+    h3 {
       font-weight: 400;
       font-size: 1.5em;
     }
@@ -71,6 +88,10 @@
       display: flex;
       // justify-content: space-between;
       margin-bottom: 0.7em;
+
+      &-first {
+        margin-bottom: -0.3em;
+      }
     }
 
     .location {
@@ -102,6 +123,12 @@
 }
 
 .skills {
+  margin-top: -3.5%;
+
+  .section-container {
+    padding-bottom: 4rem;
+  }
+
   &__list {
     max-width: 40ch;
     position: relative;
@@ -119,6 +146,10 @@
 }
 
 .contact {
+  .section-container {
+    padding: 4rem 0;
+  }
+
   &__info {
     margin-bottom: 3em;
   }
@@ -133,5 +164,19 @@
       height: 100%;
       object-fit: contain;
     }
+  }
+}
+
+.top-curve {
+  width: 100%;
+  padding-bottom: 3.5%;
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
   }
 }

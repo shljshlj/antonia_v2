@@ -52,11 +52,13 @@
 
   --background-gray: #2a2a2a;
   --bg-color-beige: #fff8ed;
+  --bg-color-beige-a: #fffcf7;
   --bg-color-light: #fff;
+  --bg-color-darker: #dbdbdb;
   --bg-color-blue-light: #e8eaf6;
   --color-dark-gray: #2c2c2c;
 
-  --page-bg: var(--bg-color-light);
+  --page-bg: var(--bg-color-beige-a);
   --page-font-color: var(--color-dark-gray);
 }
 html {
@@ -107,6 +109,11 @@ a {
     background-repeat: repeat-x;
     border-bottom: none;
   }
+}
+
+.about,
+.work {
+  color: var(--page-font-color);
 }
 
 // .container {
