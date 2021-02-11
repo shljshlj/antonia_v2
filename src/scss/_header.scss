@@ -11,6 +11,7 @@ header {
   font-size: 8vmin;
 
   .page-title {
+    // align-self: center;
     position: relative;
     font-weight: 700;
     font-size: 2em;
@@ -19,7 +20,7 @@ header {
     // letter-spacing: -0.1em;
     letter-spacing: -0.15em;
     padding-bottom: 0.5em;
-    padding-left: 0.1em;
+    padding-left: 0.05em;
 
     .second-row {
       // padding-left: 0.2em;
@@ -164,11 +165,9 @@ header {
   }
 
   .description {
-    max-width: 48ch;
+    max-width: 70ch;
     font-size: clamp(18px, 3vmin, 24px);
-    // margin-right: -2em;
     align-self: flex-end;
-    // color: #fff;
   }
 }
 
@@ -183,51 +182,23 @@ header {
   }
 
   &-1 {
-    width: 0.7em;
-    height: 0.7em;
-    top: -0.4em;
-    left: -0.2em;
+    width: 1.6em;
+    height: 1.6em;
+    top: -1em;
+    right: 0.1em;
   }
 
   &-2 {
-    width: 0.6em;
-    height: 0.6em;
-    top: -0.1em;
-    left: -0.5em;
+    width: 1.2em;
+    height: 1.2em;
+    top: 0em;
+    right: 0.1em;
   }
-
-  &-2a {
-    width: 0.5em;
-    height: 0.5em;
-    top: 0.7em;
-    left: -0.3em;
-  }
-
-  // &-2a {
-  //   width: 0.5em;
-  //   height: 0.5em;
-  //   top: 0.6em;
-  //   left: -0.45em;
-  // }
 
   &-3 {
-    width: 0.8em;
-    height: 0.8em;
-    bottom: 0.6em;
-    right: 0.6em;
-  }
-
-  &-4 {
-    width: 0.6em;
-    height: 0.6em;
-    bottom: 0.3em;
-    right: 0.5em;
-  }
-
-  &-5 {
-    width: 0.4em;
-    height: 0.4em;
-    bottom: 0.7em;
-    right: 0.3em;
+    width: 1em;
+    height: 1em;
+    top: -0.4em;
+    right: -0.1em;
   }
 }

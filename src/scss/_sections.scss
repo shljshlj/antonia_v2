@@ -21,7 +21,7 @@
 }
 
 .about {
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     &__inner {
       display: grid;
       grid-template-columns: 3fr 2fr;
@@ -45,7 +45,7 @@
     margin: auto;
     margin-top: 50px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       margin: unset;
       margin-left: auto;
     }
