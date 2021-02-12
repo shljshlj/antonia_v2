@@ -54,7 +54,7 @@ module.exports = {
       patterns: [
         {
           from: paths.public,
-          to: 'assets',
+          to: '.',
           noErrorOnMissing: true,
         }
       ]
