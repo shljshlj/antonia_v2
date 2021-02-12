@@ -174,7 +174,6 @@
   .rolling-star {
     width: 100%;
     height: 70px;
-    // background-color: yellowgreen;
     display: flex;
     justify-content: center;
 
@@ -185,10 +184,8 @@
     img {
       display: inline-block;
       margin: auto;
-      // width: 100%;
       height: 100%;
       object-fit: contain;
-      // border: 1px solid black;
     }
   }
 }
