@@ -1,6 +1,7 @@
 const paths = require('./paths');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   // Where webpack looks to start building the bundle
@@ -47,5 +48,16 @@ module.exports = {
       template: paths.src + '/index.html', // template file
       favicon: false,
     }),
+
+    // Copies files from target to destination folder
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: paths.public,
+          to: 'assets',
+          noErrorOnMissing: true,
+        }
+      ]
+    })
   ],
 }
