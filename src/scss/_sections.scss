@@ -90,7 +90,7 @@
       margin-bottom: 0.7em;
 
       &-first {
-        margin-bottom: -0.3em;
+        margin-bottom: -0.1em;
       }
     }
 
@@ -105,20 +105,6 @@
         left: -1em;
       }
     }
-
-    // .job-link {
-    //   a {
-    //     position: relative;
-    //   }
-
-    //   a::after {
-    //     content: '\21D7';
-    //     padding-left: 0.1em;
-    //     font-size: 0.7em;
-    //     position: absolute;
-    //     top: -0.1em;
-    //   }
-    // }
   }
 }
 
@@ -131,7 +117,10 @@
 
   &__list {
     max-width: 40ch;
-    position: relative;
+
+    li {
+      position: relative;
+    }
 
     li:not(:last-child) {
       margin-bottom: 0.5em;
