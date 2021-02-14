@@ -28,6 +28,7 @@
   }
 
   .section-container {
+    padding-top: calc(4rem + 8vmin);
     padding-bottom: calc(4rem + 3.5%);
     background-color: #e1f5fe;
   }
@@ -149,6 +150,33 @@
 
 .skills {
   margin-top: -3.5%;
+  position: relative;
+
+  .fish-container {
+    width: 40vmin;
+    max-width: 200px;
+    position: absolute;
+    z-index: 100;
+    top: -8vmin;
+    left: 10vmin;
+    transform: scaleX(-1) rotate(10deg);
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    @media (min-width: 1024px) {
+      transform: scaleX(1);
+      top: 5vmin;
+      right: 40vmin;
+      left: unset;
+    }
+
+    @media (min-width: 1440px) {
+      max-width: 250px;
+    }
+  }
 
   &__list {
     max-width: 40ch;
